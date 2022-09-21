@@ -105,6 +105,22 @@ a = 4; // change a, correct
 
 c++11：允许将变量声明为constexpr类型以便由编译器来验证变量的值是否是一个常量表达式。声明为constexpr的变量一定是一个常量，而且必须使用常量表达式初始化。
 
+## map容器遍历删除元素
+
+```c++
+for (auto i = map.begin(); i != map.end();)
+{
+    if (i->first == "somevalue")
+    {
+        map.erase(i++);
+    }
+    else
+    {
+        i++;
+    }
+}
+```
+
 ## 一些小记录
 
 ```cpp
