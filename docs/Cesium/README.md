@@ -24,3 +24,6 @@
 ## Note
 
 - glTF坐标系统里，长度单位是m，角度单位是弧度。
+
+- 屏幕坐标`movement.position`获取  
+- 椭球面坐标`viewer.scene.camera.pickEllipsoid(movemrnt.postion, ellipsoid)`获取
