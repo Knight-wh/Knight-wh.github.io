@@ -60,3 +60,7 @@
 `git branch --set-upstream branch-name origin/branch-name`建立本地分支和远程分支的关联。
 
 `git pull`从远程抓取分支
+
+### 遇到的问题
+
+在github上创建dev分支之后，使用`git checkout -b ... ...`命令报错，解决方法：在执行该命令之前，先`git pull`拉取一下。
