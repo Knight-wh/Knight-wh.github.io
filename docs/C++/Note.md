@@ -86,6 +86,16 @@ void main()
 }
 ```
 
+```cpp
+int* a = new int(1);
+// same as below
+int* a = nullptr;
+a = new int;
+*a = 1;
+
+delete a;
+```
+
 ### 常引用
 
 在引用之前加上const对引用进行限制，使得引用在函数中不能进行改变，但原变量的值可以改变
@@ -128,3 +138,5 @@ double j = 0;
 int i = static_cast<size_t>(j);
 ```
 `static_cast<>()` C++中的强制类型转换
+
+condition ? true : false 在表达式中时加括号
