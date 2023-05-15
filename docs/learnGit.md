@@ -53,6 +53,8 @@
 
 `git log --graph --pretty=oneline --abbrev-commit`查看分支树
 
+`git log --all --graph --decorate`
+
 ## 多人协作
 
 `git checkout -b branch-name origin/branch-name`把远程仓库的dev分支创建到本地
@@ -60,6 +62,20 @@
 `git branch --set-upstream branch-name origin/branch-name`建立本地分支和远程分支的关联。
 
 `git pull`从远程抓取分支
+
+### rebase and merge
+
+rebase操作
+
+```bash
+git branch
+*dev
+master
+
+git rebase master
+git checkout master
+git merge dev
+```
 
 ### 遇到的问题
 
