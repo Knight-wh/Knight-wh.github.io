@@ -19,3 +19,5 @@ cmake --build .
 ## Tips
 
 首先要通过cmake进行配置和生成，在不改变`CMakeLists.txt`的情况下，修改源码后，可以直接进行编译，不用再重复`cmake ..`
+
+cmake编译的项目，cpp文件中打开的文件设置绝对路径（还没找到相对路径的方法）

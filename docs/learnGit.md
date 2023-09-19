@@ -38,7 +38,6 @@
 
 `git branch dev`+`git checkout dev`等效于`git checkout -b dev`，表示创建分支并切换。
 
-
 `git merge <name>`合并指定分支到当前分支。
 
 `git branch -d <name>`删除指定分支。
