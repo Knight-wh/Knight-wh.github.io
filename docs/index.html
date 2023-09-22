@@ -15,15 +15,21 @@
   <script>
     window.$docsify = {
       // el: '#main',
-      logo: '/_media/wheelchair.svg',
+      // logo: '/_media/wheelchair.svg',
       name: '',
       repo: 'https://github.com/PPfisher',
       loadNavbar: true,
       coverpage: true,
-      onlyCover: true
+      onlyCover: true,
+      timeUpdater: {
+        text: ">last update time: {docsify-updated}",
+        formatUpdated: "{YY}/{MM}/{DD}",
+        whereToPlace: "bottom",
+      },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 </body>
 </html>

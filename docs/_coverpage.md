@@ -1,8 +1,7 @@
-![logo](_media/favicon.ico)
+![logo](_media/logo.ico ':size=100')
 
-# WH <small>21</small>
+# WHua's blog
 
 > 个人学习笔记博客。
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[开始吧！](README.md)
+[GO！](README.md)
