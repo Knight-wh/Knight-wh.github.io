@@ -19,4 +19,3 @@ IFCscheme中有几种属性properties，每一种属性都有特殊的用处。
 - Material properties. 描述组成这个元素的层次的所有材质。
 - Property sets. 用户定义的属性的集合。
 - Quantity sets. Sets of properties describing the dimensions of the elements to which they refer.
-

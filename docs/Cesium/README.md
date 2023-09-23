@@ -1,3 +1,18 @@
+# Cesium
+
+## Quick
+
+- glTF坐标系统里，长度单位是m，角度单位是弧度。
+- 屏幕坐标`movement.position`获取  
+- 椭球面坐标`viewer.scene.camera.pickEllipsoid(movemrnt.postion, ellipsoid)`获取
+
+添加调试控件
+
+`viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin);`
+`viewer.extend(Cesium.viewerCesiumInspectorMixin);`
+
+## [BIM数据结构](BIM.md)
+
 ## Cesium+Threejs解决方案
 
 ### 把Three.js当做场景模型加载
@@ -21,9 +36,3 @@
 
 **参考文章**：[Cesium和Three.js结合的5个方案](https://zhuanlan.zhihu.com/p/441682100)
 
-## Note
-
-- glTF坐标系统里，长度单位是m，角度单位是弧度。
-
-- 屏幕坐标`movement.position`获取  
-- 椭球面坐标`viewer.scene.camera.pickEllipsoid(movemrnt.postion, ellipsoid)`获取
