@@ -1,9 +1,12 @@
-* [笔记导航](README.md)
+* [主页](README.md)
+
+* blog
+
+* :notebook: 笔记
 
   * [C++](C++/README.md)
   * [Web](Web/README.md)
   * [Cesium](Cesium/README.md)
-  * [其他](learnGit.md)
-  * [快捷键](ShowCutKey/VSCode.md)
+  * [Miscellaneous](miscellaneous.md)
 
 * [:100: 关于我](about.md)
