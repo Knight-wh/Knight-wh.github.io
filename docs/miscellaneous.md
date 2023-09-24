@@ -1,13 +1,15 @@
 # Miscellaneous
 
-## shortcut key
+## cmd line && shortcut key
 
-[Git](ShowCutKey/learnGit.md)
+[Git](cmdl_shortcutkey/learnGit.md)
 
-[Docker](ShowCutKey/docker.md)
+[CMake](cmdl_shortcutkey/cmake.md)
 
-[Vscode](ShowCutKey/vscode.md)
+[Docker](cmdl_shortcutkey/docker.md)
 
-[ubuntu](ShowCutKey/ubuntu.md)
+[Vscode](cmdl_shortcutkey/vscode.md)
 
-[Edge](ShowCutKey/Edge.md)
+[ubuntu](cmdl_shortcutkey/ubuntu.md)
+
+[Edge](cmdl_shortcutkey/Edge.md)
