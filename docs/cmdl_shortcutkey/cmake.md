@@ -2,7 +2,14 @@
 
 ## command line
 
-```cmd
+```shell
+cmake -E make_directory "build"
+cmake -DCMAKE_BUILD_TYPE=Release -S . -B "build"
+cmake --build "build" --config Release
+sudo cmake --build "build" --config Release --target install
+```
+
+```shell
 mkdir build
 cd build
 cmake .. //windows下默认是MSVC，可使用-G指定编译器cmake -G"MinGW Makefiles" ..
@@ -12,7 +19,7 @@ cmake --build . //--build用来指定编译生成文件的目录，可使用ming
 ## Cmake-gui
 
 使用界面进行配置和生成，然后在编译目录里，调用编译器来实际编译和链接项目
-```
+```shell
 cmake --build .
 ```
 
