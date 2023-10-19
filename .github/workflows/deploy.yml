@@ -24,9 +24,9 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    # environment:
+    #   name: github-pages
+    #   url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,51 +35,18 @@ jobs:
       - name: Fix file timestamps
         run: |
           git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: './docs'
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-
-  # # Build job
-  # build-and-deploy:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-  #       with:
-  #         fetch-depth: 0
-  #     - name: Setup Node
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 14
-  #         # cache: npm
-  #     # - name: Setup Pages
-  #     #   uses: actions/configure-pages@v3
-  #     - name: Install dependencies and Build
-  #       run: |
-  #         npm install -g docsify-cli
-        
-  #     - name: Deploy
-  #       uses: peaceiris/actions-gh-pages@v3
-  #       with:
-  #         github_token: ${{ secrets.GITHUB_TOKEN }}
-  #         publish_dir: ./docs
-
-  # # Deployment job
-  # deploy:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   name: Deploy
-  #   steps:
-  #     - name: Deploy to Github Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs  # Set a directory to deploy
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v3
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v2
+      #   with:
+      #     # Upload entire repository
+      #     path: './docs'
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v2
