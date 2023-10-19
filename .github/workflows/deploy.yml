@@ -19,7 +19,7 @@ permissions:
 # However, do NOT cancel in-process runs as we want to allow these production deployments to complete.
 concurrency:
   group: pages
-  cancel-in-process: false
+  cancel-in-progress: false
 
 jobs:
   # Build job
