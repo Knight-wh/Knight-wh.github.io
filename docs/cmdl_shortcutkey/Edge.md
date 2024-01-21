@@ -21,6 +21,6 @@
 |       intext       | intext:"Elon Mush" "OpenAI"           |
 |        inurl       | "Elon Musk" inurl:cctv                |
 |        site        | site:zhihu.com "Elon Musk"            |
-|        size        | elon musk imagesize:2560*1440         |
+|        size        | elon musk imagesize:2560x1440         |
 |      filetype      | research filetype:pdf                 |
 | combining keywords | "Elon Musk" inurl:cctv intext:youtube |
